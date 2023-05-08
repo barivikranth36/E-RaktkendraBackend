@@ -19,7 +19,7 @@ public class BloodRequest {
     //One to One Mapping of user
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "userId", referencedColumnName = "userId")
-    private User userId;
+    private User user;
 
     @Column(name = "blood_type", nullable = false)
     private String bloodType;
@@ -29,4 +29,13 @@ public class BloodRequest {
 
     @Column(name = "total_cost", nullable = false)
     private long totalCost;
+
+    // -------------------------------- Constructor -------------------------------------------
+
+    public BloodRequest(User user, String bloodType, long quantity, long totalCost) {
+        this.user = user;
+        this.bloodType = bloodType;
+        this.quantity = quantity;
+        this.totalCost = totalCost;
+    }
 }

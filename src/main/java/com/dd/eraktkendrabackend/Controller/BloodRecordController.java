@@ -20,4 +20,6 @@ public class BloodRecordController {
     public List<BloodRecordDTO> getBloodRecord(@PathVariable String bloodBankId) {
         return bloodRecordService.getBloodRecord(Long.parseLong(bloodBankId));
     }
+
+    // --------------------------- Get the info of all available bloodb
 }

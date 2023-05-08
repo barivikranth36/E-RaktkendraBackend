@@ -47,7 +47,7 @@ public class FieldWorkerServiceImpl implements FieldWorkerService {
     public FieldWorkerDTO fieldWorkerLogin(LoginDTO loginDTO) {
         FieldWorker fieldWorker = fieldWorkerRepository.findByEmailId(loginDTO.getUsername());
         if((fieldWorker != null) && fieldWorker.getPassword().equals(loginDTO.getPassword())) {
-            System.out.println(fieldWorker);
+//            System.out.println(fieldWorker);
             return new FieldWorkerDTO(
                     fieldWorker.getWorkerId(),
                     fieldWorker.getTitle(),

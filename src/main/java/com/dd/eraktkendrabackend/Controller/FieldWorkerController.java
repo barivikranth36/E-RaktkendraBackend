@@ -21,8 +21,8 @@ public class FieldWorkerController {
 
     //------------------------------------------------ worker login ----------------------------------------------------
     @PostMapping("/workerLogin")
-    public FieldWorkerDTO fieldWorkerLogin(@RequestBody LoginDTO loginDTO){
-        System.out.println(loginDTO.toString());
+    public FieldWorkerDTO fieldWorkerLogin(@RequestBody LoginDTO loginDTO) {
+//        System.out.println(loginDTO.toString());
         FieldWorkerDTO fieldWorkerDTO = fieldWorkerService.fieldWorkerLogin(loginDTO);
         return fieldWorkerDTO;
 //        return workerService.workerLogin(loginDTO);

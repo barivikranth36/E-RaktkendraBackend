@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface BloodRequestRepository extends JpaRepository<BloodRequest, Long> {
+    BloodRequest findBloodRequestByUser_UserId(long userId);
 }
