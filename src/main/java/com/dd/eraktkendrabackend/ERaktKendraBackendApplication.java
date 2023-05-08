@@ -8,6 +8,7 @@ public class ERaktKendraBackendApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ERaktKendraBackendApplication.class, args);
+        System.out.println("Welcome to E-RaktKendra!!!");
     }
 
 }

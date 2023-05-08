@@ -7,7 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/worker")
+@RequestMapping("/fieldWorker")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class FieldWorkerController {
     @Autowired
     private FieldWorkerService fieldWorkerService;
