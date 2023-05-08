@@ -20,7 +20,7 @@ public class FieldWorkerController {
     }
 
     //------------------------------------------------ worker login ----------------------------------------------------
-    @GetMapping("/workerLogin")
+    @PostMapping("/workerLogin")
     public FieldWorkerDTO fieldWorkerLogin(@RequestBody LoginDTO loginDTO){
         System.out.println(loginDTO.toString());
         FieldWorkerDTO fieldWorkerDTO = fieldWorkerService.fieldWorkerLogin(loginDTO);

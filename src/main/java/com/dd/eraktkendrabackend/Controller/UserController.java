@@ -20,7 +20,7 @@ public class UserController {
     }
 
     // ------------------------------------------- user Login ---------------------------------------------------------------
-    @GetMapping("/userLogin")
+    @PostMapping("/userLogin")
     public User userLogin(@RequestBody LoginDTO loginDTO) {
         return userService.userLogin(loginDTO);
     }
