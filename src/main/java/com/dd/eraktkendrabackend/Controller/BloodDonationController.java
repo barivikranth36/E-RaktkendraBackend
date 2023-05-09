@@ -1,5 +1,6 @@
 package com.dd.eraktkendrabackend.Controller;
 
+import com.dd.eraktkendrabackend.DTO.BloodDonationRecordDTO;
 import com.dd.eraktkendrabackend.DTO.BloodDonationRequestDTO;
 import com.dd.eraktkendrabackend.Service.BloodDonationRequestService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +50,12 @@ public class BloodDonationController {
     @GetMapping("/getAllBloodDonationRequests/{bankId}")
     public List<BloodDonationRequestDTO> getAllBloodDonationRequests(@PathVariable String bankId) {
         return bloodDonationRequestService.getAllBloodDonationRequests(Long.parseLong(bankId));
+    }
+
+    // --------------------------------- Get blood donation history ----------------------
+    @GetMapping("/getBloodDonationHistory/{userId}")
+    public List<BloodDonationRecordDTO> getBloodDonationHistory(@PathVariable String userId) {
+        return bloodDonationRequestService.getBloodDonationHistory(Long.parseLong(userId));
     }
 
 }

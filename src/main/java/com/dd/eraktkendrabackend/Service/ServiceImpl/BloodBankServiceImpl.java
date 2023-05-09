@@ -1,5 +1,6 @@
 package com.dd.eraktkendrabackend.Service.ServiceImpl;
 
+import com.dd.eraktkendrabackend.DTO.BloodBankCityAndIdDTO;
 import com.dd.eraktkendrabackend.Entity.BloodBank;
 import com.dd.eraktkendrabackend.Repository.BloodBankRepository;
 import com.dd.eraktkendrabackend.Service.BloodBankService;
@@ -16,13 +17,16 @@ public class BloodBankServiceImpl implements BloodBankService {
     private BloodBankRepository bloodBankRepository;
 
     @Override
-    public List<String> getBloodBankCities() {
+    public List<BloodBankCityAndIdDTO> getBloodBankCities() {
         List<BloodBank> bloodBankList = bloodBankRepository.findAll();
 
-        List<String> cities = new ArrayList<>();
+        List<BloodBankCityAndIdDTO> cities = new ArrayList<>();
 
         for(BloodBank bloodBank : bloodBankList) {
-            cities.add(bloodBank.getCity());
+            cities.add(new BloodBankCityAndIdDTO(
+                    bloodBank.getCity(),
+                    bloodBank.getBloodBankId()
+            ));
         }
         return cities;
     }

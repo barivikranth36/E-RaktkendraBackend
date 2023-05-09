@@ -67,6 +67,13 @@ public class BloodRequestServiceImpl implements BloodRequestService {
         return false;
     }
 
+    @Override
+    public boolean checkBloodRequest(long userId) {
+        BloodRequest bloodRequest = bloodRequestRepository.findBloodRequestByUser_UserId(userId);
+        if(bloodRequest == null)
+            return false;
+        else return true;
+    }
 
     @Override
     public boolean revokeBloodRequest(long userId) {

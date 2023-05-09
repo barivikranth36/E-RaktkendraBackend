@@ -1,6 +1,7 @@
 package com.dd.eraktkendrabackend.Service;
 
 
+import com.dd.eraktkendrabackend.DTO.BloodDonationRecordDTO;
 import com.dd.eraktkendrabackend.DTO.BloodDonationRequestDTO;
 
 import java.util.List;
@@ -22,4 +23,7 @@ public interface BloodDonationRequestService {
 
     // -------------------- Get list of all blood donation request for a particular blood bank ------------
     List<BloodDonationRequestDTO> getAllBloodDonationRequests(long bankId);
+
+    // --------------------------- Get blood donation history of a user -----------------------------------
+    List<BloodDonationRecordDTO> getBloodDonationHistory(long userId);
 }

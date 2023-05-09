@@ -1,6 +1,7 @@
 package com.dd.eraktkendrabackend.Service.ServiceImpl;
 
 import com.dd.eraktkendrabackend.DTO.AddBloodDTO;
+import com.dd.eraktkendrabackend.DTO.BloodDonationRecordDTO;
 import com.dd.eraktkendrabackend.DTO.BloodDonationRequestDTO;
 import com.dd.eraktkendrabackend.Entity.BloodDonationRecord;
 import com.dd.eraktkendrabackend.Entity.BloodDonationRequest;
@@ -136,5 +137,23 @@ public class BloodDonationRequestServiceImpl implements BloodDonationRequestServ
             e.printStackTrace();
             return null;
         }
+    }
+
+    @Override
+    public List<BloodDonationRecordDTO> getBloodDonationHistory(long userId) {
+        List<BloodDonationRecord> bloodDonationRecordList = bloodDonationRecordRepository.findAllByUser_UserId(userId);
+
+        List<BloodDonationRecordDTO> bloodDonationRecordDTOList = new ArrayList<>();
+
+        for(BloodDonationRecord bloodDonationRecord: bloodDonationRecordList) {
+            bloodDonationRecordDTOList.add(new BloodDonationRecordDTO(
+                    bloodDonationRecord.getDonationRecordId(),
+                    bloodDonationRecord.getUser().getUserId(),
+                    bloodDonationRecord.getBloodType(),
+                    bloodDonationRecord.getBloodBankId(),
+                    bloodDonationRecord.getDateOfDonation()
+            ));
+        }
+        return bloodDonationRecordDTOList;
     }
 }

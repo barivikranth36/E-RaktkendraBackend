@@ -21,6 +21,12 @@ public class BloodRequestController {
         return bloodRequestService.bloodRequestByUser(bloodRequestDTO);
     }
 
+    // ---------------------- Check if blood request exist or not on user side ----------------------------
+    @GetMapping("/checkBloodRequest/{userId}")
+    public boolean checkBloodRequest(@PathVariable String userId) {
+        return false;
+    }
+
     // --------------------------------- Revoke the blood request -----------------------------------
     @DeleteMapping("/revokeBloodRequest/{userId}")
     public boolean revokeBloodRequest(@PathVariable String userId) {

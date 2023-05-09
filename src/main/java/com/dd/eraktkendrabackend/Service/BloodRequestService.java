@@ -9,6 +9,9 @@ public interface BloodRequestService {
     // ------------------------------ User requests for blood ------------------------------------------
     boolean bloodRequestByUser(BloodRequestDTO bloodRequestDTO);
 
+    // ------------------------------ Check if blood request exist or not -----------------------------------
+    boolean checkBloodRequest(long userId);
+
     // ------------------------------ Revoke blood request -------------------------------------
     boolean revokeBloodRequest(long userId);
 
