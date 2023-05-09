@@ -21,5 +21,4 @@ public class BloodRecordController {
         return bloodRecordService.getBloodRecord(Long.parseLong(bloodBankId));
     }
 
-    // --------------------------- Get the info of all available bloodb
 }

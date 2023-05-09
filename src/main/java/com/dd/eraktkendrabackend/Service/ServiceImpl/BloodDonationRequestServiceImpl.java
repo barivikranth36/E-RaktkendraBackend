@@ -75,6 +75,14 @@ public class BloodDonationRequestServiceImpl implements BloodDonationRequestServ
             AddBloodDTO addBloodDTO = new AddBloodDTO(bloodDonationRequest.getBankId(),
                     bloodDonationRequest.getBloodType());
             bloodRecordService.addBlood(addBloodDTO);
+
+            // Incrementing user's credit
+            User user = bloodDonationRequest.getUser();
+            int credit = user.getCredit();
+            credit++;
+            user.setCredit(credit);
+            userRepository.save(user);
+
             return true;
         } catch (Exception e) {
             e.printStackTrace();

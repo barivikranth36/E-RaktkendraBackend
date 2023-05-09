@@ -16,8 +16,8 @@ public class BloodRequestRecord {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long requestRecordId;
 
-    //One to One mapping of user
-    @OneToOne(fetch = FetchType.LAZY)
+    //Many to One mapping of user
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "userId", referencedColumnName = "userId")
     private User user;
 
@@ -30,9 +30,14 @@ public class BloodRequestRecord {
     @Column(name = "total_cost", nullable = false)
     private long totalCost;
 
-    @Column(name = "status", nullable = false)
-    private String status;
-
     @Column(name = "bankId", nullable = false)
     private long bankId;
+
+    public BloodRequestRecord(User user, String bloodType, long quantity, long totalCost, long bankId) {
+        this.user = user;
+        this.bloodType = bloodType;
+        this.quantity = quantity;
+        this.totalCost = totalCost;
+        this.bankId = bankId;
+    }
 }

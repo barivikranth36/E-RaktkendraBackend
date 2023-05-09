@@ -30,12 +30,18 @@ public class BloodRequest {
     @Column(name = "total_cost", nullable = false)
     private long totalCost;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "bankId", referencedColumnName = "bloodBankId")
+    private BloodBank bloodBank;
+
     // -------------------------------- Constructor -------------------------------------------
 
-    public BloodRequest(User user, String bloodType, long quantity, long totalCost) {
+
+    public BloodRequest(User user, String bloodType, long quantity, long totalCost, BloodBank bloodBank) {
         this.user = user;
         this.bloodType = bloodType;
         this.quantity = quantity;
         this.totalCost = totalCost;
+        this.bloodBank = bloodBank;
     }
 }
