@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class JwtRequest {
+public class JwtResponseFieldWorker {
 
-    private String username;
-    private String password;
-    private String role;
+    private String jwtToken;
+
+    private FieldWorkerDTO fieldWorkerDTO;
 }
