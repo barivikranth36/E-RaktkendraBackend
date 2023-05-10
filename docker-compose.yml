@@ -1,12 +1,12 @@
 version: '3'
 services:
   mysql:
-    image: mysql:8
+    image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: 12345678
       MYSQL_DATABASE: eraktkendra
     volumes:
-      - mysql-volume:/var/lib/mysql
+      - ./db:/var/lib/mysql
     ports:
       - 3307:3306
     networks:
@@ -15,11 +15,12 @@ services:
   backend:
     depends_on:
       - mysql
-    image: barivikranth36/e_raktkendra:latest
+    image: barivikranth36/eraktkendra:latest
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/eraktkendra?useSSL=false
-      SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: 12345678
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 12345678
+      MYSQL_PORT: 3306
     ports:
       - 9090:9090
 
