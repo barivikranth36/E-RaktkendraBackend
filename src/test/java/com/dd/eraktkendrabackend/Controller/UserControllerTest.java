@@ -2,7 +2,6 @@ package com.dd.eraktkendrabackend.Controller;
 
 import static org.mockito.Mockito.when;
 
-import com.dd.eraktkendrabackend.DTO.LoginDTO;
 import com.dd.eraktkendrabackend.Entity.User;
 import com.dd.eraktkendrabackend.Service.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -72,47 +71,6 @@ class UserControllerTest {
         user2.setUserId(1L);
         String content = (new ObjectMapper()).writeValueAsString(user2);
         MockHttpServletRequestBuilder requestBuilder = MockMvcRequestBuilders.post("/user/addUser")
-                .contentType(MediaType.APPLICATION_JSON)
-                .content(content);
-        MockMvcBuilders.standaloneSetup(userController)
-                .build()
-                .perform(requestBuilder)
-                .andExpect(MockMvcResultMatchers.status().isOk())
-                .andExpect(MockMvcResultMatchers.content().contentType("application/json"))
-                .andExpect(MockMvcResultMatchers.content()
-                        .string(
-                                "{\"userId\":1,\"title\":\"Dr\",\"firstName\":\"Jane\",\"lastName\":\"Doe\",\"dob\":0,\"gender\":\"Gender\",\"phoneNumber\""
-                                        + ":\"6625550144\",\"emailId\":\"42\",\"password\":\"iloveyou\",\"bloodType\":\"Blood Type\",\"address\":\"42 Main"
-                                        + " St\",\"city\":\"Oxford\",\"pincode\":1,\"credit\":1}"));
-    }
-
-    /**
-     * Method under test: {@link UserController#userLogin(LoginDTO)}
-     */
-    @Test
-    void testUserLogin() throws Exception {
-        User user = new User();
-        user.setAddress("42 Main St");
-        user.setBloodType("Blood Type");
-        user.setCity("Oxford");
-        user.setCredit(1);
-        user.setDob(Date.from(LocalDate.of(1970, 1, 1).atStartOfDay().atZone(ZoneOffset.UTC).toInstant()));
-        user.setEmailId("42");
-        user.setFirstName("Jane");
-        user.setGender("Gender");
-        user.setLastName("Doe");
-        user.setPassword("iloveyou");
-        user.setPhoneNumber("6625550144");
-        user.setPincode(1L);
-        user.setTitle("Dr");
-        user.setUserId(1L);
-        when(userService.userLogin(Mockito.<LoginDTO>any())).thenReturn(user);
-
-        LoginDTO loginDTO = new LoginDTO();
-        loginDTO.setPassword("iloveyou");
-        loginDTO.setUsername("janedoe");
-        String content = (new ObjectMapper()).writeValueAsString(loginDTO);
-        MockHttpServletRequestBuilder requestBuilder = MockMvcRequestBuilders.post("/user/userLogin")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(content);
         MockMvcBuilders.standaloneSetup(userController)

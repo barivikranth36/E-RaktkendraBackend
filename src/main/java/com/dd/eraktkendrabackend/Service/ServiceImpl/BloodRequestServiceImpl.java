@@ -6,6 +6,8 @@ import com.dd.eraktkendrabackend.Entity.*;
 import com.dd.eraktkendrabackend.Repository.*;
 import com.dd.eraktkendrabackend.Service.BloodRecordService;
 import com.dd.eraktkendrabackend.Service.BloodRequestService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +16,8 @@ import java.util.List;
 
 @Service
 public class BloodRequestServiceImpl implements BloodRequestService {
+
+    private static final Logger logger = LoggerFactory.getLogger(BloodBankServiceImpl.class);
 
     @Autowired
     private BloodRecordService bloodRecordService;
@@ -35,6 +39,7 @@ public class BloodRequestServiceImpl implements BloodRequestService {
 
     @Override
     public boolean bloodRequestByUser(BloodRequestDTO bloodRequestDTO) {
+        logger.info("User is requesting for some blood units...");
         List<BloodRecordDTO> bloodRecordDTOList = bloodRecordService.getBloodRecord(bloodRequestDTO
                 .getBloodBankId());
 
@@ -61,14 +66,17 @@ public class BloodRequestServiceImpl implements BloodRequestService {
 
                 // Saving to blood request table
                 bloodRequestRepository.save(bloodRequest);
+                logger.info("Successfully got the blood request...");
                 return true;
             }
         }
+        logger.info("requested blood unit is not present in the blood bank...");
         return false;
     }
 
     @Override
     public boolean checkBloodRequest(long userId) {
+        logger.info("User checking if he/she already has a blood request or not...");
         BloodRequest bloodRequest = bloodRequestRepository.findBloodRequestByUser_UserId(userId);
         if(bloodRequest == null)
             return false;
@@ -77,6 +85,7 @@ public class BloodRequestServiceImpl implements BloodRequestService {
 
     @Override
     public boolean revokeBloodRequest(long userId) {
+        logger.info("Deleting blood request...");
         try {
             BloodRequest bloodRequest = bloodRequestRepository.findBloodRequestByUser_UserId(userId);
             bloodRequestRepository.delete(bloodRequest);
@@ -89,6 +98,7 @@ public class BloodRequestServiceImpl implements BloodRequestService {
 
     @Override
     public boolean acceptBloodRequest(long bloodRequestId) {
+        logger.info("Fieldworker accepting blood request...");
          /* - Create object of BloodRequestRecord class and fill the values.
             - Remove the entry from BloodRequest table
             - decrease the quantity of blood in blood record of that bloodbank
@@ -130,6 +140,7 @@ public class BloodRequestServiceImpl implements BloodRequestService {
 
     @Override
     public List<BloodRequestDTO> getAllBloodRequests(long bankId) {
+        logger.info("Fieldworker requests all the bloodreqeust of that particular bank...");
         List<BloodRequest> bloodRequestList = bloodRequestRepository.findAllByBloodBank_BloodBankId(bankId);
 
         List<BloodRequestDTO> bloodRequestDTOList = new ArrayList<>();
