@@ -3,6 +3,7 @@ package com.dd.eraktkendrabackend.Controller;
 import com.dd.eraktkendrabackend.DTO.BloodBankCityAndIdDTO;
 import com.dd.eraktkendrabackend.Service.BloodBankService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +21,7 @@ public class BloodBankController {
 
 
     // ----------------------------- Method to get list of all cities available -------------------------------
+    @PreAuthorize("hasRole(ROLE_USER)")
     @GetMapping("/getCitiesAndBankId")
     List<BloodBankCityAndIdDTO> getBloodBankCities() {
         return bloodBankService.getBloodBankCities();
