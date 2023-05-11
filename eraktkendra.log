@@ -1,0 +1,245 @@
+2023-05-11 00:23:20.799  INFO 14987 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-11 00:23:20.813  INFO 14987 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-11 00:23:20.819  INFO 14987 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-11 00:23:27.485  INFO 16325 --- [main] c.d.e.ERaktKendraBackendApplication      : Starting ERaktKendraBackendApplication using Java 17.0.7 on AKANKSHAs-MacBook-Air.local with PID 16325 (/Users/akankshashukla/IdeaProjects/E-RaktkendraBackend/target/classes started by akankshashukla in /Users/akankshashukla/IdeaProjects/E-RaktkendraBackend)
+2023-05-11 00:23:27.486  INFO 16325 --- [main] c.d.e.ERaktKendraBackendApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-05-11 00:23:27.721  INFO 16325 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-11 00:23:27.747  INFO 16325 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 9 JPA repository interfaces.
+2023-05-11 00:23:27.938  INFO 16325 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-05-11 00:23:27.942  INFO 16325 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-11 00:23:27.942  INFO 16325 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-05-11 00:23:27.981  INFO 16325 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-11 00:23:27.981  INFO 16325 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 479 ms
+2023-05-11 00:23:28.013  INFO 16325 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-11 00:23:28.186  INFO 16325 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-11 00:23:28.227  INFO 16325 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-11 00:23:28.252  INFO 16325 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-05-11 00:23:28.309  INFO 16325 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-11 00:23:28.346  INFO 16325 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-05-11 00:23:28.690  INFO 16325 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-11 00:23:28.694  INFO 16325 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-11 00:23:28.830  WARN 16325 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-11 00:23:28.959  INFO 16325 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@be9cc86, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68af8288, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a05ff8e, org.springframework.security.web.header.HeaderWriterFilter@7d7f966f, org.springframework.security.web.authentication.logout.LogoutFilter@7fa8fff, com.dd.eraktkendrabackend.Config.JwtAuthenticationFilter@520ec7a7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1abea1ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a1f22f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8dc3019, org.springframework.security.web.session.SessionManagementFilter@445f6f73, org.springframework.security.web.access.ExceptionTranslationFilter@6e00d737, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25e24908]
+2023-05-11 00:23:29.080  INFO 16325 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-05-11 00:23:29.085  INFO 16325 --- [main] c.d.e.ERaktKendraBackendApplication      : Started ERaktKendraBackendApplication in 1.732 seconds (JVM running for 2.096)
+2023-05-11 00:23:30.011  INFO 16325 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-11 00:23:30.011  INFO 16325 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-11 00:23:30.015  INFO 16325 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-11 00:23:38.345  INFO 16330 --- [main] c.d.e.ERaktKendraBackendApplication      : Starting ERaktKendraBackendApplication using Java 17.0.7 on AKANKSHAs-MacBook-Air.local with PID 16330 (/Users/akankshashukla/IdeaProjects/E-RaktkendraBackend/target/classes started by akankshashukla in /Users/akankshashukla/IdeaProjects/E-RaktkendraBackend)
+2023-05-11 00:23:38.346  INFO 16330 --- [main] c.d.e.ERaktKendraBackendApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-05-11 00:23:38.546  INFO 16330 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-11 00:23:38.572  INFO 16330 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 9 JPA repository interfaces.
+2023-05-11 00:23:38.746  INFO 16330 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-05-11 00:23:38.750  INFO 16330 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-11 00:23:38.750  INFO 16330 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-05-11 00:23:38.782  INFO 16330 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-11 00:23:38.782  INFO 16330 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 419 ms
+2023-05-11 00:23:38.824  INFO 16330 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-11 00:23:38.933  INFO 16330 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-11 00:23:38.976  INFO 16330 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-11 00:23:38.995  INFO 16330 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-05-11 00:23:39.051  INFO 16330 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-11 00:23:39.087  INFO 16330 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-05-11 00:23:39.400  INFO 16330 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-11 00:23:39.404  INFO 16330 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-11 00:23:39.535  WARN 16330 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-11 00:23:39.670  INFO 16330 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@be9cc86, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68af8288, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a05ff8e, org.springframework.security.web.header.HeaderWriterFilter@7d7f966f, org.springframework.security.web.authentication.logout.LogoutFilter@7fa8fff, com.dd.eraktkendrabackend.Config.JwtAuthenticationFilter@2ef1fc8a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1abea1ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a1f22f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8dc3019, org.springframework.security.web.session.SessionManagementFilter@445f6f73, org.springframework.security.web.access.ExceptionTranslationFilter@6e00d737, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25e24908]
+2023-05-11 00:23:39.796  INFO 16330 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-05-11 00:23:39.801  INFO 16330 --- [main] c.d.e.ERaktKendraBackendApplication      : Started ERaktKendraBackendApplication in 1.58 seconds (JVM running for 1.769)
+2023-05-11 00:26:24.746  INFO 16330 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 00:26:24.747  INFO 16330 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-11 00:26:24.749  INFO 16330 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-11 00:34:43.076  WARN 16330 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m33s490ms).
+2023-05-11 00:41:29.195  INFO 16330 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-11 00:41:29.198  INFO 16330 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-11 00:41:29.209  INFO 16330 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-11 00:42:22.000  INFO 16775 --- [main] c.d.e.ERaktKendraBackendApplication      : Starting ERaktKendraBackendApplication using Java 17.0.7 on AKANKSHAs-MacBook-Air.local with PID 16775 (/Users/akankshashukla/IdeaProjects/E-RaktkendraBackend/target/classes started by akankshashukla in /Users/akankshashukla/IdeaProjects/E-RaktkendraBackend)
+2023-05-11 00:42:22.001  INFO 16775 --- [main] c.d.e.ERaktKendraBackendApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-05-11 00:42:22.230  INFO 16775 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-11 00:42:22.260  INFO 16775 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 9 JPA repository interfaces.
+2023-05-11 00:42:22.449  INFO 16775 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-05-11 00:42:22.452  INFO 16775 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-11 00:42:22.452  INFO 16775 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-05-11 00:42:22.494  INFO 16775 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-11 00:42:22.494  INFO 16775 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 476 ms
+2023-05-11 00:42:22.530  INFO 16775 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-11 00:42:22.696  INFO 16775 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-11 00:42:22.739  INFO 16775 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-11 00:42:22.764  INFO 16775 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-05-11 00:42:22.829  INFO 16775 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-11 00:42:22.868  INFO 16775 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-05-11 00:42:23.187  INFO 16775 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-11 00:42:23.191  INFO 16775 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-11 00:42:23.320  WARN 16775 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-11 00:42:23.451  INFO 16775 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1afabf06, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33060020, org.springframework.security.web.context.SecurityContextPersistenceFilter@5b643d6e, org.springframework.security.web.header.HeaderWriterFilter@6fe337a5, org.springframework.security.web.authentication.logout.LogoutFilter@5c20505f, com.dd.eraktkendrabackend.Config.JwtAuthenticationFilter@36931450, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22ed2886, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@10bcbbce, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@443b6765, org.springframework.security.web.session.SessionManagementFilter@37ab1b10, org.springframework.security.web.access.ExceptionTranslationFilter@66ab088c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ec3689b]
+2023-05-11 00:42:23.557  INFO 16775 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-05-11 00:42:23.561  INFO 16775 --- [main] c.d.e.ERaktKendraBackendApplication      : Started ERaktKendraBackendApplication in 1.69 seconds (JVM running for 2.111)
+2023-05-11 00:44:13.490  INFO 16775 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 00:44:13.491  INFO 16775 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-11 00:44:13.494  INFO 16775 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-05-11 00:59:58.850  INFO 16775 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-11 00:59:58.853  INFO 16775 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-11 00:59:58.874  INFO 16775 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-11 11:35:34.013  INFO 847 --- [main] c.d.e.ERaktKendraBackendApplication      : Starting ERaktKendraBackendApplication using Java 17.0.7 on AKANKSHAs-MacBook-Air.local with PID 847 (/Users/akankshashukla/IdeaProjects/E-RaktkendraBackend/target/classes started by akankshashukla in /Users/akankshashukla/IdeaProjects/E-RaktkendraBackend)
+2023-05-11 11:35:34.014  INFO 847 --- [main] c.d.e.ERaktKendraBackendApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-05-11 11:35:34.275  INFO 847 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-11 11:35:34.302  INFO 847 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 9 JPA repository interfaces.
+2023-05-11 11:35:34.503  INFO 847 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-05-11 11:35:34.507  INFO 847 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-11 11:35:34.507  INFO 847 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-05-11 11:35:34.547  INFO 847 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-11 11:35:34.547  INFO 847 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 515 ms
+2023-05-11 11:35:34.584  INFO 847 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-11 11:35:34.743  INFO 847 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-11 11:35:34.793  INFO 847 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-11 11:35:34.825  INFO 847 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-05-11 11:35:34.901  INFO 847 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-11 11:35:34.947  INFO 847 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-05-11 11:35:35.290  INFO 847 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-11 11:35:35.293  INFO 847 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-11 11:35:35.431  WARN 847 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-11 11:35:35.562  INFO 847 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@70f3bf00, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49770ef9, org.springframework.security.web.context.SecurityContextPersistenceFilter@27234b7c, org.springframework.security.web.header.HeaderWriterFilter@637c8632, org.springframework.security.web.authentication.logout.LogoutFilter@68fc636a, com.dd.eraktkendrabackend.Config.JwtAuthenticationFilter@4d90d91f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@792b9dd3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3fdede3a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15bcecf9, org.springframework.security.web.session.SessionManagementFilter@38c1b1a7, org.springframework.security.web.access.ExceptionTranslationFilter@57fec63f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@166a5659]
+2023-05-11 11:35:35.669  INFO 847 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-05-11 11:35:35.673  INFO 847 --- [main] c.d.e.ERaktKendraBackendApplication      : Started ERaktKendraBackendApplication in 1.818 seconds (JVM running for 2.115)
+2023-05-11 11:37:15.862  INFO 847 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 11:37:15.862  INFO 847 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-11 11:37:15.863  INFO 847 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-11 11:50:35.637  WARN 847 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m766ms).
+2023-05-11 11:52:04.770  INFO 847 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-11 11:52:04.771  INFO 847 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-11 11:52:04.775  INFO 847 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-11 11:52:19.343  INFO 1103 --- [main] c.d.e.ERaktKendraBackendApplication      : Starting ERaktKendraBackendApplication using Java 17.0.7 on AKANKSHAs-MacBook-Air.local with PID 1103 (/Users/akankshashukla/IdeaProjects/E-RaktkendraBackend/target/classes started by akankshashukla in /Users/akankshashukla/IdeaProjects/E-RaktkendraBackend)
+2023-05-11 11:52:19.344  INFO 1103 --- [main] c.d.e.ERaktKendraBackendApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-05-11 11:52:19.550  INFO 1103 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-11 11:52:19.576  INFO 1103 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 9 JPA repository interfaces.
+2023-05-11 11:52:19.746  INFO 1103 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-05-11 11:52:19.749  INFO 1103 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-11 11:52:19.750  INFO 1103 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-05-11 11:52:19.793  INFO 1103 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-11 11:52:19.793  INFO 1103 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 435 ms
+2023-05-11 11:52:19.824  INFO 1103 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-11 11:52:19.929  INFO 1103 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-11 11:52:19.970  INFO 1103 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-11 11:52:19.987  INFO 1103 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-05-11 11:52:20.048  INFO 1103 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-11 11:52:20.083  INFO 1103 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-05-11 11:52:20.383  INFO 1103 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-11 11:52:20.386  INFO 1103 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-11 11:52:20.515  WARN 1103 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-11 11:52:20.642  INFO 1103 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6a261998, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70f3bf00, org.springframework.security.web.context.SecurityContextPersistenceFilter@10bcbbce, org.springframework.security.web.header.HeaderWriterFilter@7a2fd94c, org.springframework.security.web.authentication.logout.LogoutFilter@7be6dabb, com.dd.eraktkendrabackend.Config.JwtAuthenticationFilter@770cbe5d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@125a8ab6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52d01430, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49770ef9, org.springframework.security.web.session.SessionManagementFilter@4abfa2ff, org.springframework.security.web.access.ExceptionTranslationFilter@1d2d793d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45964b9e]
+2023-05-11 11:52:20.752  INFO 1103 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-05-11 11:52:20.757  INFO 1103 --- [main] c.d.e.ERaktKendraBackendApplication      : Started ERaktKendraBackendApplication in 1.524 seconds (JVM running for 1.914)
+2023-05-11 11:52:30.744  INFO 1103 --- [http-nio-9090-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 11:52:30.744  INFO 1103 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-11 11:52:30.745  INFO 1103 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-11 12:00:03.398  WARN 1103 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m43s342ms).
+2023-05-11 12:04:55.604  INFO 1103 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-11 12:04:55.606  INFO 1103 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-11 12:04:55.609  INFO 1103 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-11 12:04:58.813  INFO 1254 --- [main] c.d.e.ERaktKendraBackendApplication      : Starting ERaktKendraBackendApplication using Java 17.0.7 on AKANKSHAs-MacBook-Air.local with PID 1254 (/Users/akankshashukla/IdeaProjects/E-RaktkendraBackend/target/classes started by akankshashukla in /Users/akankshashukla/IdeaProjects/E-RaktkendraBackend)
+2023-05-11 12:04:58.814  INFO 1254 --- [main] c.d.e.ERaktKendraBackendApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-05-11 12:04:59.023  INFO 1254 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-11 12:04:59.051  INFO 1254 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 9 JPA repository interfaces.
+2023-05-11 12:04:59.233  INFO 1254 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-05-11 12:04:59.236  INFO 1254 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-11 12:04:59.236  INFO 1254 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-05-11 12:04:59.266  INFO 1254 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-11 12:04:59.266  INFO 1254 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 436 ms
+2023-05-11 12:04:59.305  INFO 1254 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-11 12:04:59.410  INFO 1254 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-11 12:04:59.447  INFO 1254 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-11 12:04:59.467  INFO 1254 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-05-11 12:04:59.526  INFO 1254 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-11 12:04:59.561  INFO 1254 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-05-11 12:04:59.846  INFO 1254 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-11 12:04:59.849  INFO 1254 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-11 12:04:59.976  WARN 1254 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-11 12:05:00.107  INFO 1254 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@575cfec1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32068aef, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d035ab6, org.springframework.security.web.header.HeaderWriterFilter@27f31d91, org.springframework.web.filter.CorsFilter@8ab231, org.springframework.security.web.authentication.logout.LogoutFilter@7ea8224b, com.dd.eraktkendrabackend.Config.JwtAuthenticationFilter@4d90d91f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63af52a6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24a807a9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b3a8bea, org.springframework.security.web.session.SessionManagementFilter@2bb84aa5, org.springframework.security.web.access.ExceptionTranslationFilter@5644f664, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@912a644]
+2023-05-11 12:05:00.209  INFO 1254 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-05-11 12:05:00.214  INFO 1254 --- [main] c.d.e.ERaktKendraBackendApplication      : Started ERaktKendraBackendApplication in 1.519 seconds (JVM running for 1.868)
+2023-05-11 12:05:12.790  INFO 1254 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-11 12:05:12.791  INFO 1254 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-11 12:05:12.794  INFO 1254 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-11 12:05:17.590  INFO 1266 --- [main] c.d.e.ERaktKendraBackendApplication      : Starting ERaktKendraBackendApplication using Java 17.0.7 on AKANKSHAs-MacBook-Air.local with PID 1266 (/Users/akankshashukla/IdeaProjects/E-RaktkendraBackend/target/classes started by akankshashukla in /Users/akankshashukla/IdeaProjects/E-RaktkendraBackend)
+2023-05-11 12:05:17.592  INFO 1266 --- [main] c.d.e.ERaktKendraBackendApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-05-11 12:05:17.784  INFO 1266 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-11 12:05:17.809  INFO 1266 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 9 JPA repository interfaces.
+2023-05-11 12:05:17.972  INFO 1266 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-05-11 12:05:17.975  INFO 1266 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-11 12:05:17.975  INFO 1266 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-05-11 12:05:18.013  INFO 1266 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-11 12:05:18.014  INFO 1266 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 406 ms
+2023-05-11 12:05:18.045  INFO 1266 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-11 12:05:18.149  INFO 1266 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-11 12:05:18.180  INFO 1266 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-11 12:05:18.192  INFO 1266 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-05-11 12:05:18.244  INFO 1266 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-11 12:05:18.278  INFO 1266 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-05-11 12:05:18.559  INFO 1266 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-11 12:05:18.562  INFO 1266 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-11 12:05:18.681  WARN 1266 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-11 12:05:18.804  INFO 1266 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7ab3f194, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@613a608e, org.springframework.security.web.context.SecurityContextPersistenceFilter@52d434c1, org.springframework.security.web.header.HeaderWriterFilter@445f6f73, org.springframework.web.filter.CorsFilter@37b1218, org.springframework.security.web.authentication.logout.LogoutFilter@69926b6e, com.dd.eraktkendrabackend.Config.JwtAuthenticationFilter@f575d2b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3407ded1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44e7c06b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@575cfec1, org.springframework.security.web.session.SessionManagementFilter@4e782401, org.springframework.security.web.access.ExceptionTranslationFilter@1e4a4ed5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66851aa5]
+2023-05-11 12:05:18.904  INFO 1266 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-05-11 12:05:18.908  INFO 1266 --- [main] c.d.e.ERaktKendraBackendApplication      : Started ERaktKendraBackendApplication in 1.447 seconds (JVM running for 1.64)
+2023-05-11 12:06:29.950  INFO 1266 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 12:06:29.951  INFO 1266 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-11 12:06:29.953  INFO 1266 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-11 12:06:30.135  INFO 1266 --- [http-nio-9090-exec-8] c.d.e.S.S.BloodBankServiceImpl           : Fetching the list of all the cities...
+2023-05-11 12:06:30.138  INFO 1266 --- [http-nio-9090-exec-10] c.d.e.S.S.BloodRequestServiceImpl        : User checking if he/she already has a blood request or not...
+2023-05-11 12:06:30.138  INFO 1266 --- [http-nio-9090-exec-9] .d.e.S.S.BloodDonationRequestServiceImpl : Checking if blood donation request already present or not.
+2023-05-11 12:06:30.155  INFO 1266 --- [http-nio-9090-exec-2] c.d.e.S.S.BloodBankServiceImpl           : Fetching the list of all the cities...
+2023-05-11 12:06:30.155  INFO 1266 --- [http-nio-9090-exec-1] c.d.e.S.S.BloodRequestServiceImpl        : User checking if he/she already has a blood request or not...
+2023-05-11 12:06:30.156  INFO 1266 --- [http-nio-9090-exec-3] .d.e.S.S.BloodDonationRequestServiceImpl : Checking if blood donation request already present or not.
+2023-05-11 12:06:40.371  INFO 1266 --- [http-nio-9090-exec-5] c.d.e.S.S.BloodRequestServiceImpl        : User is requesting for some blood units...
+2023-05-11 12:06:40.372  INFO 1266 --- [http-nio-9090-exec-5] c.d.e.S.S.BloodRecordServiceImpl         : Getting all the blood records of a particular bank.
+2023-05-11 12:06:40.436  INFO 1266 --- [http-nio-9090-exec-5] c.d.e.S.S.BloodRequestServiceImpl        : Successfully got the blood request...
+2023-05-11 12:06:42.045  INFO 1266 --- [http-nio-9090-exec-6] .d.e.S.S.BloodDonationRequestServiceImpl : Checking if blood donation request already present or not.
+2023-05-11 12:06:42.045  INFO 1266 --- [http-nio-9090-exec-9] c.d.e.S.S.BloodBankServiceImpl           : Fetching the list of all the cities...
+2023-05-11 12:06:42.045  INFO 1266 --- [http-nio-9090-exec-1] c.d.e.S.S.BloodRequestServiceImpl        : User checking if he/she already has a blood request or not...
+2023-05-11 12:07:40.182  INFO 1266 --- [http-nio-9090-exec-6] c.d.e.S.S.BloodRequestServiceImpl        : Fieldworker requests all the bloodreqeust of that particular bank...
+2023-05-11 12:07:40.198  INFO 1266 --- [http-nio-9090-exec-1] c.d.e.S.S.BloodRequestServiceImpl        : Fieldworker requests all the bloodreqeust of that particular bank...
+2023-05-11 12:07:48.070  INFO 1266 --- [http-nio-9090-exec-10] .d.e.S.S.BloodDonationRequestServiceImpl : Get all the blood donation request for the  particular bank
+2023-05-11 12:07:48.089  INFO 1266 --- [http-nio-9090-exec-7] .d.e.S.S.BloodDonationRequestServiceImpl : Get all the blood donation request for the  particular bank
+2023-05-11 12:07:54.746  INFO 1266 --- [http-nio-9090-exec-1] .d.e.S.S.BloodDonationRequestServiceImpl : Get all the blood donation request for the  particular bank
+2023-05-11 12:07:54.760  INFO 1266 --- [http-nio-9090-exec-4] .d.e.S.S.BloodDonationRequestServiceImpl : Get all the blood donation request for the  particular bank
+2023-05-11 12:08:02.522  INFO 1266 --- [http-nio-9090-exec-9] .d.e.S.S.BloodDonationRequestServiceImpl : User has requested for blood donation...
+2023-05-11 12:08:02.539  INFO 1266 --- [http-nio-9090-exec-9] .d.e.S.S.BloodDonationRequestServiceImpl : Successfully requested the blood donation requeset
+2023-05-11 12:08:03.964  INFO 1266 --- [http-nio-9090-exec-8] c.d.e.S.S.BloodRequestServiceImpl        : User checking if he/she already has a blood request or not...
+2023-05-11 12:08:03.964  INFO 1266 --- [http-nio-9090-exec-7] .d.e.S.S.BloodDonationRequestServiceImpl : Checking if blood donation request already present or not.
+2023-05-11 12:08:03.965  INFO 1266 --- [http-nio-9090-exec-6] c.d.e.S.S.BloodBankServiceImpl           : Fetching the list of all the cities...
+2023-05-11 12:08:10.119  INFO 1266 --- [http-nio-9090-exec-3] .d.e.S.S.BloodDonationRequestServiceImpl : Get all the blood donation request for the  particular bank
+2023-05-11 12:08:10.134  INFO 1266 --- [http-nio-9090-exec-9] .d.e.S.S.BloodDonationRequestServiceImpl : Get all the blood donation request for the  particular bank
+2023-05-11 12:08:29.671  INFO 1266 --- [http-nio-9090-exec-2] .d.e.S.S.BloodDonationRequestServiceImpl : Fieldworker is accepting blood donation request of user...
+2023-05-11 12:08:29.705  INFO 1266 --- [http-nio-9090-exec-2] c.d.e.S.S.BloodRecordServiceImpl         : Adding blood to the bank...
+2023-05-11 12:08:29.720  INFO 1266 --- [http-nio-9090-exec-2] .d.e.S.S.BloodDonationRequestServiceImpl : Successfully accepted blood donation request and updated the bank records
+2023-05-11 12:08:29.739  INFO 1266 --- [http-nio-9090-exec-8] .d.e.S.S.BloodDonationRequestServiceImpl : Get all the blood donation request for the  particular bank
+2023-05-11 12:08:35.039  INFO 1266 --- [http-nio-9090-exec-2] c.d.e.S.S.BloodBankServiceImpl           : Fetching the list of all the cities...
+2023-05-11 12:08:35.040  INFO 1266 --- [http-nio-9090-exec-10] c.d.e.S.S.BloodRequestServiceImpl        : User checking if he/she already has a blood request or not...
+2023-05-11 12:08:35.039  INFO 1266 --- [http-nio-9090-exec-5] .d.e.S.S.BloodDonationRequestServiceImpl : Checking if blood donation request already present or not.
+2023-05-11 12:08:35.050  INFO 1266 --- [http-nio-9090-exec-10] .d.e.S.S.BloodDonationRequestServiceImpl : Checking if blood donation request already present or not.
+2023-05-11 12:08:35.050  INFO 1266 --- [http-nio-9090-exec-6] c.d.e.S.S.BloodRequestServiceImpl        : User checking if he/she already has a blood request or not...
+2023-05-11 12:08:35.052  INFO 1266 --- [http-nio-9090-exec-7] c.d.e.S.S.BloodBankServiceImpl           : Fetching the list of all the cities...
+2023-05-11 12:08:54.014  INFO 1266 --- [http-nio-9090-exec-1] c.d.e.S.S.BloodRequestServiceImpl        : Fieldworker accepting blood request...
+2023-05-11 12:08:54.049  INFO 1266 --- [http-nio-9090-exec-9] c.d.e.S.S.BloodRequestServiceImpl        : Fieldworker requests all the bloodreqeust of that particular bank...
+2023-05-11 12:09:30.423  INFO 1266 --- [http-nio-9090-exec-3] .d.e.S.S.BloodDonationRequestServiceImpl : Checking if blood donation request already present or not.
+2023-05-11 12:09:30.423  INFO 1266 --- [http-nio-9090-exec-9] c.d.e.S.S.BloodRequestServiceImpl        : User checking if he/she already has a blood request or not...
+2023-05-11 12:09:30.429  INFO 1266 --- [http-nio-9090-exec-1] c.d.e.S.S.BloodBankServiceImpl           : Fetching the list of all the cities...
+2023-05-11 12:09:30.436  INFO 1266 --- [http-nio-9090-exec-2] .d.e.S.S.BloodDonationRequestServiceImpl : Checking if blood donation request already present or not.
+2023-05-11 12:09:30.436  INFO 1266 --- [http-nio-9090-exec-5] c.d.e.S.S.BloodRequestServiceImpl        : User checking if he/she already has a blood request or not...
+2023-05-11 12:09:30.440  INFO 1266 --- [http-nio-9090-exec-8] c.d.e.S.S.BloodBankServiceImpl           : Fetching the list of all the cities...
+2023-05-11 12:09:44.185  INFO 1266 --- [http-nio-9090-exec-10] c.d.e.S.S.BloodRequestServiceImpl        : User is requesting for some blood units...
+2023-05-11 12:09:44.186  INFO 1266 --- [http-nio-9090-exec-10] c.d.e.S.S.BloodRecordServiceImpl         : Getting all the blood records of a particular bank.
+2023-05-11 12:09:44.199  INFO 1266 --- [http-nio-9090-exec-10] c.d.e.S.S.BloodRequestServiceImpl        : Successfully got the blood request...
+2023-05-11 12:09:45.998  INFO 1266 --- [http-nio-9090-exec-3] c.d.e.S.S.BloodBankServiceImpl           : Fetching the list of all the cities...
+2023-05-11 12:09:45.998  INFO 1266 --- [http-nio-9090-exec-1] c.d.e.S.S.BloodRequestServiceImpl        : User checking if he/she already has a blood request or not...
+2023-05-11 12:09:45.998  INFO 1266 --- [http-nio-9090-exec-5] .d.e.S.S.BloodDonationRequestServiceImpl : Checking if blood donation request already present or not.
+2023-05-11 12:09:55.801  INFO 1266 --- [http-nio-9090-exec-10] c.d.e.S.S.BloodRequestServiceImpl        : Fieldworker requests all the bloodreqeust of that particular bank...
+2023-05-11 12:09:55.815  INFO 1266 --- [http-nio-9090-exec-7] c.d.e.S.S.BloodRequestServiceImpl        : Fieldworker requests all the bloodreqeust of that particular bank...
+2023-05-11 12:10:13.262  INFO 1266 --- [http-nio-9090-exec-4] c.d.e.S.S.BloodRequestServiceImpl        : Fieldworker accepting blood request...
+2023-05-11 12:10:13.310  INFO 1266 --- [http-nio-9090-exec-5] c.d.e.S.S.BloodRequestServiceImpl        : Fieldworker requests all the bloodreqeust of that particular bank...
+2023-05-11 12:10:24.730  INFO 1266 --- [http-nio-9090-exec-9] c.d.e.S.S.BloodBankServiceImpl           : Fetching the list of all the cities...
+2023-05-11 12:10:24.730  INFO 1266 --- [http-nio-9090-exec-10] .d.e.S.S.BloodDonationRequestServiceImpl : Checking if blood donation request already present or not.
+2023-05-11 12:10:24.730  INFO 1266 --- [http-nio-9090-exec-4] c.d.e.S.S.BloodRequestServiceImpl        : User checking if he/she already has a blood request or not...
+2023-05-11 12:10:24.742  INFO 1266 --- [http-nio-9090-exec-3] .d.e.S.S.BloodDonationRequestServiceImpl : Checking if blood donation request already present or not.
+2023-05-11 12:10:24.742  INFO 1266 --- [http-nio-9090-exec-9] c.d.e.S.S.BloodBankServiceImpl           : Fetching the list of all the cities...
+2023-05-11 12:10:24.742  INFO 1266 --- [http-nio-9090-exec-5] c.d.e.S.S.BloodRequestServiceImpl        : User checking if he/she already has a blood request or not...
