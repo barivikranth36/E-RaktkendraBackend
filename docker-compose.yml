@@ -3,7 +3,7 @@ services:
   mysql:
     image: mysql:5.7
     environment:
-      MYSQL_ROOT_PASSWORD: 12345678
+      MYSQL_ROOT_PASSWORD: 123456789
       MYSQL_DATABASE: eraktkendra
     volumes:
       - ./db:/var/lib/mysql
@@ -29,8 +29,8 @@ services:
     image: barivikranth36/eraktkendra:latest
     environment:
       MYSQL_HOST: mysql
-      MYSQL_USER: root
-      MYSQL_PASSWORD: 12345678
+      MYSQL_USER: akanksha
+      MYSQL_PASSWORD: 123456789
       MYSQL_PORT: 3306
     ports:
       - 9090:9090
