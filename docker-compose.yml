@@ -12,6 +12,17 @@ services:
     networks:
       - my-network
 
+  frontend:
+    depends_on:
+      - backend
+    image: barivikranth36/e_raktkendra_frontend:latest
+    ports:
+      - 3000:3000
+
+    networks:
+      - my-network
+
+
   backend:
     depends_on:
       - mysql
