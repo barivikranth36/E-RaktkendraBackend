@@ -15,7 +15,7 @@ services:
   frontend:
     depends_on:
       - backend
-    image: barivikranth36/e_raktkendra_frontend:latest
+    image: imshukla/eraktkendra_security_frontend:latest
     ports:
       - 3000:3000
 
@@ -26,7 +26,7 @@ services:
   backend:
     depends_on:
       - mysql
-    image: barivikranth36/eraktkendra:latest
+    image: imshukla/eraktkendra_security_backend:latest
     environment:
       MYSQL_HOST: mysql
       MYSQL_USER: akanksha
