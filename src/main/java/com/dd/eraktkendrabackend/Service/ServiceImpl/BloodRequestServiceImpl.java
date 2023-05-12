@@ -17,7 +17,7 @@ import java.util.List;
 @Service
 public class BloodRequestServiceImpl implements BloodRequestService {
 
-    private static final Logger logger = LoggerFactory.getLogger(BloodBankServiceImpl.class);
+    private static final Logger logger = LoggerFactory.getLogger(BloodRequestServiceImpl.class);
 
     @Autowired
     private BloodRecordService bloodRecordService;

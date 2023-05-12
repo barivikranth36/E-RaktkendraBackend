@@ -3,6 +3,7 @@ package com.dd.eraktkendrabackend.Controller;
 import com.dd.eraktkendrabackend.DTO.BloodRecordDTO;
 import com.dd.eraktkendrabackend.Service.BloodRecordService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,6 +17,7 @@ public class BloodRecordController {
     private BloodRecordService bloodRecordService;
 
     // -------------------------- Get blood quantity and cost details based on blood_bank_id ---------------------------
+    @PreAuthorize("hasRole(ROLE_FIELDWORKER)")
     @GetMapping("/getBloodRecord/{bloodBankId}")
     public List<BloodRecordDTO> getBloodRecord(@PathVariable String bloodBankId) {
         return bloodRecordService.getBloodRecord(Long.parseLong(bloodBankId));
