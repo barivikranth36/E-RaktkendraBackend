@@ -27,6 +27,14 @@ services:
     networks:
       - my-network
 
+  frontend:
+    depends_on:
+      - backend
+    image: barivikranth36/e_raktkendra_frontend
+    ports:
+      - 3000:3000
+    networks:
+      - my-network
 volumes:
   mysql-volume:
 
