@@ -4,7 +4,7 @@ pipeline {
         stage('Git clone backend') {
             steps {
                 git url: 'https://github.com/imshukla12/E-RaktkendraBackend.git' , branch: 'master'
-                echi 'project cloned'
+                echo 'project cloned'
             }
         }
 //       stage('Maven Build') {
