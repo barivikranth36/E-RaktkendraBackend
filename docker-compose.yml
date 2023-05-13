@@ -29,7 +29,7 @@ services:
     image: imshukla/eraktkendra_security_backend:latest
     environment:
       MYSQL_HOST: mysql
-      MYSQL_USER: akanksha
+      MYSQL_USER: root
       MYSQL_PASSWORD: 123456789
       MYSQL_PORT: 3306
     ports:
@@ -38,14 +38,6 @@ services:
     networks:
       - my-network
 
-  frontend:
-    depends_on:
-      - backend
-    image: barivikranth36/e_raktkendra_frontend
-    ports:
-      - 3000:3000
-    networks:
-      - my-network
 volumes:
   mysql-volume:
 
