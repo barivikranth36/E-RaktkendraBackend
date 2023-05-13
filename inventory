@@ -1,2 +1,2 @@
 [localhost]
-akanksha ansible_connection=local ansible_sudo_pass = 123456789
+server0 ansible_host=192.168.99.45 ansible_connection=ssh ansible_ssh_user=shukla ansible_ssh_pass=1234 ansible_sudo_pass=1234 ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
