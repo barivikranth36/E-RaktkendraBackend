@@ -26,16 +26,16 @@ pipeline {
                   echo 'docker image created'
             }
         }
-//       stage('Push Docker Image to Docker Hub') {
-//               steps {
-//                         echo 'docker tag'
-//                         sh 'docker tag eraktkendra_security_backend imshukla/eraktkendra_security_backend:latest'
-//                         echo 'pushing image to docker hub'
-//                         withDockerRegistry([ credentialsId: "docker-cred", url: "" ]){
-//                         sh 'docker push imshukla/eraktkendra_security_backend'
-//                     }
-//               }
-//       }
+      stage('Push Docker Image to Docker Hub') {
+              steps {
+                        echo 'docker tag'
+                        sh 'docker tag eraktkendra_security_backend imshukla/eraktkendra_security_backend:latest'
+                        echo 'pushing image to docker hub'
+                        withDockerRegistry([ credentialsId: "docker-cred", url: "" ]){
+                        sh 'docker push imshukla/eraktkendra_security_backend'
+                    }
+              }
+      }
 //       stage('Ansible Pull Docker Image') {
 //                   steps {
 //                       ansiblePlaybook becomeUser: null,
