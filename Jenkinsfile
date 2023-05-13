@@ -7,12 +7,12 @@ pipeline {
                 echo 'project cloned'
             }
         }
-//       stage('Maven Build') {
-//             steps {
-//                 sh 'mvn clean install'
-//                 echo 'maven build completed'
-//             }
-//         }
+      stage('Maven Build') {
+            steps {
+                sh 'mvn clean install'
+                echo 'maven build completed'
+            }
+        }
 //       stage('Testing project') {
 //              steps {
 //                 sh "mvn test"
