@@ -12,7 +12,7 @@
 
     # Pull Docker images and Start Containers using compose file
     - name: Run docker compose up command
-      become: true
+      # become: true
       docker_compose:
         project_src: ./
         state: present
