@@ -13,12 +13,6 @@ pipeline {
                 echo 'maven build completed'
             }
         }
-//       stage('Testing project') {
-//              steps {
-//                 sh "mvn test"
-//                 echo "Testing completed"
-//              }
-//         }
       stage('Docker Build to Image') {
              steps {
                   echo 'creating docker image'
